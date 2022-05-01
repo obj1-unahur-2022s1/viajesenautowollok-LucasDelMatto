@@ -1,7 +1,7 @@
 import clientes.*
 import remiseras.*
 import cooperativa.*
-
+/* Perfecto lo que hiciste, esta muy bien no mezclar en los test los objetos que no se realacionan */
 /*Profe como no esta aclarado en la consigna como deben ser los test, los voy a agrupar por remisera con los ejemplos dados. */
 
 test "Viajes de Roxana de 10 km" {

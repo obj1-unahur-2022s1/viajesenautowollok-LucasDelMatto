@@ -1,3 +1,7 @@
+/*
+ * Clientes: Perfecto
+ * Solo hice cambios para mostrarte como escribir los métodos de manera mas corta
+ */
 object ludmila{
 	
 	method precioKM() = 18
@@ -12,13 +16,9 @@ object anaMaria{
 		economicamenteEstable = not economicamenteEstable
 	}
 	
-	method precioKM(){
-		if (economicamenteEstable){
-			return 30
-		}else{
-			return 25
-		}
-	}
+	method precioKM()= if (economicamenteEstable){30}else{25}
+	
+
 }
 
 object teresa{
@@ -40,7 +40,6 @@ object melina{
 		cliente = nuevoCliente
 	}
 	
-	method precioKM(){
-		return cliente.precioKM()-3
-	}
+	method precioKM() = cliente.precioKM()-3
+	
 }
