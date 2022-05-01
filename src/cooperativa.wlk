@@ -1,3 +1,6 @@
+/*
+ * Cooperativa: Bien
+ */
 import remiseras.*
 import clientes.*
 
@@ -19,10 +22,8 @@ object oficina {
 	}
 	
 	method intercambiarRemiseras(){
-		const temp = remiseraSecundaria
-		
-		remiseraSecundaria = remiseraPrimaria
-		remiseraPrimaria = temp
+		/* Aca podias reutilizar el método self.asignarRemiseras(r2,r1) */
+		self.asignarRemiseras(remiseraSecundaria, remiseraPrimaria)
 	}
 	
 	method remiseraElegidaParaViaje(cliente, kms){
